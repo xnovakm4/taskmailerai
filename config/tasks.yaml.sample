@@ -1,0 +1,21 @@
+# tasks.yaml
+# Define email tasks in the following format:
+# - subject: Subject line that triggers this task
+#   base_prompt: The base prompt to use with the AI model
+#   output_format: Output format (text or pdf)
+
+- subject: "Summary"
+  base_prompt: "Please summarize the following text:"
+  output_format: "text"
+
+- subject: "Translation"
+  base_prompt: "Please translate the following text to English:"
+  output_format: "text"
+
+- subject: "Analysis"
+  base_prompt: "Please analyze the following text:"
+  output_format: "pdf"
+
+- subject: "TravelLog"
+  base_prompt: "I need help creating a travel log for one month..."
+  output_format: "pdf"

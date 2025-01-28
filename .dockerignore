@@ -1,0 +1,9 @@
+# Vyloučit konfigurační soubory
+config/*
+
+# Vyloučit Dockerfile
+Dockerfile
+
+# Vyloučit pracovní datové soubory
+rate_limit_stats.json
+wkhtmltopdf*

@@ -1,0 +1,49 @@
+email:
+  imap_server: "imap.example.com"
+  smtp_server: "smtp.example.com"
+  email_address: "your.email@example.com"
+  password: "your-email-password"
+
+openrouter:
+  enabled: true
+  api_key: "sk-or-v1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  default_model: "openai/gpt-4o-mini"
+
+openai:
+  enabled: true
+  api_key: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  default_model: "gpt-4o-mini"
+
+azure_openai:
+  enabled: true
+  api_key: "your-azure-openai-api-key"
+  endpoint: "https://your-resource-name.openai.azure.com/"
+  api_version: "2024-12-01-preview"
+  default_model: "gpt-4o-mini"
+
+ollama:
+  enabled: true
+  host: "http://localhost:11434"
+  default_model: "deepseek-r1:8b"
+
+rate_limit_defaults:
+  max_requests: 10
+  time_window: 3600
+
+# List of allowed users with custom rate limits, emails must be in lowercase
+allowed_users:
+  - email: "user1@example.com"
+    rate_limit:
+      max_requests: 10
+      time_window: 3600
+  - email: "user2@example.com"
+    rate_limit:
+      max_requests: 10
+      time_window: 3600
+
+app_settings:
+  check_interval: 60
+  max_attachments: 5
+
+logging:
+  level: DEBUG  # Can be changed to INFO, WARNING, ERROR, CRITICAL
